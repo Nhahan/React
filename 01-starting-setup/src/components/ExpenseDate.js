@@ -4,10 +4,10 @@ function ExpenseDate(props) {
   const year = props.date.getFullYear();
 
   return (
-    <div>
-      <div>{month}</div>
-      <div>{day}</div>
-      <div>{year}</div>
+    <div className="expense-date">
+      <div className="expense-month">{month}</div>
+      <div className="expense-year">{day}</div>
+      <div className="expense-day">{year}</div>
     </div>
   );
 }
