@@ -39,9 +39,11 @@ const ExpenseForm = () => {
     const expenseData = {
       title: userInput.enteredTitle,
       amount: userInput.enteredAmount,
-      date: new Date(userInput.enteredDate)
-    }
-  }
+      date: new Date(userInput.enteredDate),
+    };
+
+    console.log("send:", expenseData);
+  };
 
   return (
     <form>
@@ -69,7 +71,7 @@ const ExpenseForm = () => {
           />
         </div>
         <div className="new-expense_actions">
-          <button type="submit">Add Expense</button>
+          <button type="submit" onSubmit="submitHandler">Add Expense</button>
         </div>
       </div>
     </form>
